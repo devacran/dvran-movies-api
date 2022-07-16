@@ -14,7 +14,7 @@
     "nodemon": "^2.0.4"
   },
   "scripts": {
-    "dev": "DEBUG=app:* nodemon index",
+    "dev": "nodemon --inspect index > ./logs/server.log 2>&1",
     "start": "NODE_ENV=production node index"
   },
   "keywords": [],
